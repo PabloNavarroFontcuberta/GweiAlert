@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="app.android.gweialert.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ethereumLogo"
+            app:srcCompat="@drawable/ethblack" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:paddingTop="40dp"
+            android:fontFamily="@font/typoslab"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/main"
+            android:textColorHighlight="@color/black"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_gas_cheap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:drawableStart="@drawable/gascheap"
+        android:layout_margin="1dp"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/text_gas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:drawableStart="@drawable/gasmedium"
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/text_gas_expensive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/gasexpensive"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/gweiPriceText"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLength="4"
+                android:layout_marginStart="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="80" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Lower price notification" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/estimatedGweiPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <!--    <ImageButton
+            android:id="@+id/btn_update"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            app:srcCompat="@android:drawable/ic_popup_sync" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="Developed by Pablo Navarro | 2021 | Powered by Etherscan.io APIs "
+            android:textColor="@color/main"
+            android:textSize="9sp" />
+    </LinearLayout>
+</LinearLayout>

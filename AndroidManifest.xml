@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.android.gweialert">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/eth"
+        android:label="@string/app_name"
+        android:logo="@drawable/ethblack"
+        android:roundIcon="@drawable/eth"
+        android:versionCode="2"
+        android:versionName="GweiAlert"
+        android:supportsRtl="true"
+        android:theme="@style/GweiAlert">
+        <activity android:name="app.android.gweialert.MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

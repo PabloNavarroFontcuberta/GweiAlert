@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GweiAlert</string>
+    <string name="ethereumLogo">Ethereum Logo</string>
+    <string name="gwei_notification_channel_id" translatable="false">gwei_channel</string>
+    <string name="gwei_notification_channel_name" translatable="true">GweiAlert</string>
+    <string name="notification_title">GweiAlert</string>
+    <string name="snooze">Snooze</string>
+</resources>
